@@ -1,16 +1,71 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .description {
+            margin: 20px 0;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<header role="heading">
+    <h1>John Doe's Portfolio</h1>
+</header>
+
+<nav role="navigation">
+    <ul role="list">
+        <li role="listitem"><a href="#about">About</a></li>
+        <li role="listitem"><a href="#projects">Projects</a></li>
+        <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <img role="img" src="profile.jpg" alt="John Doe's Profile Picture">
+        <p class="description">Hello! I'm John Doe, a web developer with a passion for creating accessible and user-friendly websites.</p>
+    </section>
+
+    <section>
+        <h2>My Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1: Accessible Web Design</li>
+            <li role="listitem">Project 2: E-commerce Website</li>
+            <li role="listitem">Project 3: Mobile App Development</li>
+        </ul>
+    </section>
+</main>
 
 </body>
-
 </html>
